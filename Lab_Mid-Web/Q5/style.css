@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #ffffff;
+  color: #000;
+}
+
+.page {
+  display: flex;
+  min-height: 90vh;
+}
+
+.left {
+  width: 60%;
+  padding: 100px;
+}
+
+.left h1 {
+  font-size: 48px;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.highlight1 {
+  color: #ff7a18;
+}
+
+.highlight2 {
+  color: #ff00aa;
+}
+
+.cards {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  width: 160px;
+  height: 260px;
+  border-radius: 20px;
+  background: #eee;
+}
+
+.card.middle {
+  background: #ddd;
+}
+
+.right {
+  width: 40%;
+  border-left: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-box {
+  width: 360px;
+  text-align: center;
+}
+
+.login-box h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* INPUTS */
+.login-box input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* BUTTONS */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  background: #a7c7f9;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.forgot {
+  display: block;
+  margin: 15px 0;
+  font-size: 14px;
+  color: #000;
+  text-decoration: none;
+}
+
+.fb-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  background: white;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  border: 1px solid #1877f2;
+  background: white;
+  color: #1877f2;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.meta {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #666;
+}
+
+footer {
+  border-top: 1px solid #e0e0e0;
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #666;
+}

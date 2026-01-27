@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+.topbar {
+  background: #ddd;
+  padding: 10px;
+}
+.topbar span {
+  margin-right: 15px;
+}
+.right {
+  float: right;
+}
+.container {
+  display: flex;
+  padding: 20px;
+}
+.left {
+  width: 30%;
+  background: #b2f0e6;
+  padding: 20px;
+  border-radius: 10px;
+}
+.left p {
+  background: #e0ffff;
+  padding: 10px;
+  border-radius: 5px;
+}
+.right-panel {
+  width: 70%;
+  padding: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid #ccc;
+}
+th {
+  background: orange;
+  color: #fff;
+}
+td,
+th {
+  padding: 10px;
+  text-align: left;
+}
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+button {
+  padding: 10px 20px;
+  background: linear-gradient(to right, blue, yellow);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+footer {
+  text-align: center;
+  padding: 10px;
+  background: linear-gradient(to right, orange, green);
+  color: #fff;
+}

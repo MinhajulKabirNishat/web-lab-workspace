@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: #f4f6f8;
+  color: #111;
+}
+
+.navbar {
+  background: #fff;
+  height: 60px;
+  padding: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ddd;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 24px;
+  color: #ff8c1a;
+}
+
+nav a {
+  margin-right: 15px;
+  color: #333;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+nav a.active {
+  font-weight: bold;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.notif {
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+.avatar {
+  background: #ddd;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.container {
+  padding: 30px;
+}
+
+.container h1 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.courses {
+  background: white;
+  border-radius: 10px;
+  padding: 25px;
+}
+
+.courses h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  border-radius: 10px;
+  position: relative;
+  padding-top: 90px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background: white;
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 80px;
+}
+
+.yellow::before {
+  background: #f3c969;
+}
+.gray::before {
+  background: #cfd6d8;
+}
+.steel::before {
+  background: #bfc8cc;
+}
+.pink::before {
+  background: #f07aa7;
+}
+.yellow2::before {
+  background: #e8c06e;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: #0a58ca;
+  color: white;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+}
+
+/* EDIT ICON */
+.edit {
+  position: absolute;
+  top: 45px;
+  right: 10px;
+  background: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  padding: 15px;
+  font-size: 14px;
+  color: #0a58ca;
+  line-height: 1.4;
+}
+
+.all-btn {
+  margin: 30px auto 0;
+  display: block;
+  padding: 8px 18px;
+  background: #d1d6db;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
