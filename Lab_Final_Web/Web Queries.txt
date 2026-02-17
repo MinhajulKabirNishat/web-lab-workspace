@@ -1,0 +1,54 @@
+CREATE DATABASE uiutech_final;
+
+CREATE TABLE employee_final (
+    EmployeeID int PRIMARY KEY,
+    EmployeeName varchar(30),
+    DepartmentID int,
+    DepartmentName varchar(30),
+    Salary int,
+    PerformanceRating varchar(1)
+    );
+
+
+INSERT INTO employee_final VALUES (1, 'Arif Rahman', 201, 'Software Development', 45000, 'B'),
+(2, 'Mariun Khatun', 201,'Software Development', 52000, 'A' ),
+(3, 'Sabbir Hossain', 202, 'Quality Assurance', 38000, 'C' ), 
+(4, 'Samira Begum', 203, 'UI/UX Design', 42000, 'B');
+
+SELECT EmployeeName, Salary 
+FROM employee_final 
+WHERE Salary > 40000 
+ORDER BY Salary DESC;
+
+SELECT DepartmentName, SUM(Salary)as salary_sum
+FROM employee_final
+GROUP BY DepartmentName
+ORDER BY salary_sum DESC;
+
+SELECT DepartmentName, COUNT(EmployeeID) as emp_count
+FROM employee_final
+GROUP BY DepartmentName;
+
+UPDATE employee_final
+SET PerformanceRating = 'C'
+WHERE Salary < 40000 AND PerformanceRating != 'D';
+
+UPDATE employee_final
+SET Salary = Salary + 5000
+WHERE Salary > 50000 AND (Salary+5000) <=60000;
+
+SELECT PerformanceRating, COUNT(EmployeeID) as emp_count
+FROM employee_final
+GROUP BY PerformanceRating;
+
+SELECT DepartmentName, COUNT(EmployeeID) as emp_count
+FROM employee_final
+GROUP BY DepartmentName
+ORDER BY emp_count DESC;
+
+
+///Select departments that have more than 3 employees
+SELECT DepartmentName, COUNT(EmployeeID) as emp_count
+FROM employee_final
+GROUP BY DepartmentName
+Having emp_count > 3;
